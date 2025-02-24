@@ -1,0 +1,7 @@
+import SwiftUI
+
+struct SugarMenuModel {
+ 
+}
+
+

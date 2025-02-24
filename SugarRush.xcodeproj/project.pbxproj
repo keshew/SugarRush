@@ -7,18 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8654A6AA2D6926AF00E42650 /* SugarWinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6A72D6926AF00E42650 /* SugarWinView.swift */; };
+		8654A6AB2D6926AF00E42650 /* SugarWinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6A82D6926AF00E42650 /* SugarWinModel.swift */; };
+		8654A6AC2D6926AF00E42650 /* SugarWinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6A92D6926AF00E42650 /* SugarWinViewModel.swift */; };
+		8654A6B12D692A7600E42650 /* SugarLoseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6AE2D692A7600E42650 /* SugarLoseView.swift */; };
+		8654A6B22D692A7600E42650 /* SugarLoseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6AF2D692A7600E42650 /* SugarLoseModel.swift */; };
+		8654A6B32D692A7600E42650 /* SugarLoseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6B02D692A7600E42650 /* SugarLoseViewModel.swift */; };
+		8654A6B82D692B0800E42650 /* SugarPauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6B52D692B0800E42650 /* SugarPauseView.swift */; };
+		8654A6B92D692B0800E42650 /* SugarPauseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6B62D692B0800E42650 /* SugarPauseModel.swift */; };
+		8654A6BA2D692B0800E42650 /* SugarPauseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6B72D692B0800E42650 /* SugarPauseViewModel.swift */; };
+		8654A6BF2D692B5500E42650 /* SugarRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6BC2D692B5500E42650 /* SugarRulesView.swift */; };
+		8654A6C02D692B5500E42650 /* SugarRulesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6BD2D692B5500E42650 /* SugarRulesModel.swift */; };
+		8654A6C12D692B5500E42650 /* SugarRulesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6BE2D692B5500E42650 /* SugarRulesViewModel.swift */; };
+		8654A6C52D69311B00E42650 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6C42D69311B00E42650 /* UserDefaultsManager.swift */; };
+		8654A6CA2D693B8100E42650 /* SugarSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6C72D693B8100E42650 /* SugarSignView.swift */; };
+		8654A6CB2D693B8100E42650 /* SugarSignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6C82D693B8100E42650 /* SugarSignModel.swift */; };
+		8654A6CC2D693B8100E42650 /* SugarSignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6C92D693B8100E42650 /* SugarSignViewModel.swift */; };
+		8654A6D12D6943A300E42650 /* SugarLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6CE2D6943A300E42650 /* SugarLoginView.swift */; };
+		8654A6D22D6943A300E42650 /* SugarLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6CF2D6943A300E42650 /* SugarLoginModel.swift */; };
+		8654A6D32D6943A300E42650 /* SugarLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6D02D6943A300E42650 /* SugarLoginViewModel.swift */; };
+		8654A6D62D69448200E42650 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6D52D69448200E42650 /* API.swift */; };
+		8654A6DB2D69453200E42650 /* SugarMyRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6D82D69453200E42650 /* SugarMyRecordsView.swift */; };
+		8654A6DC2D69453200E42650 /* SugarMyRecordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6D92D69453200E42650 /* SugarMyRecordsModel.swift */; };
+		8654A6DD2D69453200E42650 /* SugarMyRecordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6DA2D69453200E42650 /* SugarMyRecordsViewModel.swift */; };
+		8654A6E22D69458500E42650 /* SugarWorldRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6DF2D69458500E42650 /* SugarWorldRecordsView.swift */; };
+		8654A6E32D69458500E42650 /* SugarWorldRecordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6E02D69458500E42650 /* SugarWorldRecordsModel.swift */; };
+		8654A6E42D69458500E42650 /* SugarWorldRecordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654A6E12D69458500E42650 /* SugarWorldRecordsViewModel.swift */; };
+		865B76242D5163D200921102 /* SugarSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B76212D5163D200921102 /* SugarSettingsView.swift */; };
+		865B76252D5163D200921102 /* SugarSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B76222D5163D200921102 /* SugarSettingsModel.swift */; };
+		865B76262D5163D200921102 /* SugarSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B76232D5163D200921102 /* SugarSettingsViewModel.swift */; };
+		865B762B2D516FD000921102 /* SugarLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B76282D516FD000921102 /* SugarLevelsView.swift */; };
+		865B762C2D516FD000921102 /* SugarLevelsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B76292D516FD000921102 /* SugarLevelsModel.swift */; };
+		865B762D2D516FD000921102 /* SugarLevelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B762A2D516FD000921102 /* SugarLevelsViewModel.swift */; };
+		865B76322D51742100921102 /* SugarRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B762F2D51742100921102 /* SugarRecordsView.swift */; };
+		865B76332D51742100921102 /* SugarRecordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B76302D51742100921102 /* SugarRecordsModel.swift */; };
+		865B76342D51742100921102 /* SugarRecordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B76312D51742100921102 /* SugarRecordsViewModel.swift */; };
 		865E51382D50FA4A002C4434 /* SugarRushApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51372D50FA4A002C4434 /* SugarRushApp.swift */; };
-		865E513A2D50FA4A002C4434 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51392D50FA4A002C4434 /* ContentView.swift */; };
 		865E513C2D50FA4B002C4434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865E513B2D50FA4B002C4434 /* Assets.xcassets */; };
 		865E513F2D50FA4B002C4434 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 865E513E2D50FA4B002C4434 /* Preview Assets.xcassets */; };
+		865E514D2D50FA9F002C4434 /* SugarImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E514C2D50FA9F002C4434 /* SugarImageName.swift */; };
+		865E514F2D50FAAA002C4434 /* SugarCustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E514E2D50FAAA002C4434 /* SugarCustomButtons.swift */; };
+		865E51512D50FAB2002C4434 /* SugarTextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51502D50FAB2002C4434 /* SugarTextExtension.swift */; };
+		865E51532D50FABF002C4434 /* SugarTextOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51522D50FABF002C4434 /* SugarTextOutline.swift */; };
+		865E51582D50FAE9002C4434 /* SugarLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51552D50FAE9002C4434 /* SugarLoadingView.swift */; };
+		865E51592D50FAE9002C4434 /* SugarLoadingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51562D50FAE9002C4434 /* SugarLoadingModel.swift */; };
+		865E515A2D50FAE9002C4434 /* SugarLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51572D50FAE9002C4434 /* SugarLoadingViewModel.swift */; };
+		865E515D2D50FC65002C4434 /* BowlbyOneSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 865E515B2D50FC3E002C4434 /* BowlbyOneSC-Regular.ttf */; };
+		865E51622D51018E002C4434 /* SugarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E515F2D51018E002C4434 /* SugarMenuView.swift */; };
+		865E51632D51018E002C4434 /* SugarMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51602D51018E002C4434 /* SugarMenuModel.swift */; };
+		865E51642D51018E002C4434 /* SugarMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E51612D51018E002C4434 /* SugarMenuViewModel.swift */; };
+		866277B72D685F3E0002B314 /* SugarGameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866277B62D685F3E0002B314 /* SugarGameExtension.swift */; };
+		866631B02D6CA82100EA1989 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866631AF2D6CA82100EA1989 /* AudioManager.swift */; };
+		866631B72D6CA86800EA1989 /* bg.wav in Resources */ = {isa = PBXBuildFile; fileRef = 866631B22D6CA86500EA1989 /* bg.wav */; };
+		866631B82D6CA86800EA1989 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 866631B32D6CA86600EA1989 /* lose.wav */; };
+		866631B92D6CA86800EA1989 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 866631B42D6CA86700EA1989 /* win.wav */; };
+		86E5BDD02D5250C0004CD284 /* SugarShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E5BDCD2D5250C0004CD284 /* SugarShopView.swift */; };
+		86E5BDD12D5250C0004CD284 /* SugarShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E5BDCE2D5250C0004CD284 /* SugarShopModel.swift */; };
+		86E5BDD22D5250C0004CD284 /* SugarShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E5BDCF2D5250C0004CD284 /* SugarShopViewModel.swift */; };
+		86E5BDD72D525E67004CD284 /* SugarGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E5BDD42D525E67004CD284 /* SugarGameView.swift */; };
+		86E5BDD82D525E67004CD284 /* SugarGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E5BDD52D525E67004CD284 /* SugarGameModel.swift */; };
+		86E5BDD92D525E67004CD284 /* SugarGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E5BDD62D525E67004CD284 /* SugarGameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8654A6A72D6926AF00E42650 /* SugarWinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarWinView.swift; sourceTree = "<group>"; };
+		8654A6A82D6926AF00E42650 /* SugarWinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarWinModel.swift; sourceTree = "<group>"; };
+		8654A6A92D6926AF00E42650 /* SugarWinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarWinViewModel.swift; sourceTree = "<group>"; };
+		8654A6AE2D692A7600E42650 /* SugarLoseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoseView.swift; sourceTree = "<group>"; };
+		8654A6AF2D692A7600E42650 /* SugarLoseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoseModel.swift; sourceTree = "<group>"; };
+		8654A6B02D692A7600E42650 /* SugarLoseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoseViewModel.swift; sourceTree = "<group>"; };
+		8654A6B52D692B0800E42650 /* SugarPauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPauseView.swift; sourceTree = "<group>"; };
+		8654A6B62D692B0800E42650 /* SugarPauseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPauseModel.swift; sourceTree = "<group>"; };
+		8654A6B72D692B0800E42650 /* SugarPauseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarPauseViewModel.swift; sourceTree = "<group>"; };
+		8654A6BC2D692B5500E42650 /* SugarRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarRulesView.swift; sourceTree = "<group>"; };
+		8654A6BD2D692B5500E42650 /* SugarRulesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarRulesModel.swift; sourceTree = "<group>"; };
+		8654A6BE2D692B5500E42650 /* SugarRulesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarRulesViewModel.swift; sourceTree = "<group>"; };
+		8654A6C42D69311B00E42650 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		8654A6C72D693B8100E42650 /* SugarSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarSignView.swift; sourceTree = "<group>"; };
+		8654A6C82D693B8100E42650 /* SugarSignModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarSignModel.swift; sourceTree = "<group>"; };
+		8654A6C92D693B8100E42650 /* SugarSignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarSignViewModel.swift; sourceTree = "<group>"; };
+		8654A6CE2D6943A300E42650 /* SugarLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoginView.swift; sourceTree = "<group>"; };
+		8654A6CF2D6943A300E42650 /* SugarLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoginModel.swift; sourceTree = "<group>"; };
+		8654A6D02D6943A300E42650 /* SugarLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoginViewModel.swift; sourceTree = "<group>"; };
+		8654A6D52D69448200E42650 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8654A6D82D69453200E42650 /* SugarMyRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarMyRecordsView.swift; sourceTree = "<group>"; };
+		8654A6D92D69453200E42650 /* SugarMyRecordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarMyRecordsModel.swift; sourceTree = "<group>"; };
+		8654A6DA2D69453200E42650 /* SugarMyRecordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarMyRecordsViewModel.swift; sourceTree = "<group>"; };
+		8654A6DF2D69458500E42650 /* SugarWorldRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarWorldRecordsView.swift; sourceTree = "<group>"; };
+		8654A6E02D69458500E42650 /* SugarWorldRecordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarWorldRecordsModel.swift; sourceTree = "<group>"; };
+		8654A6E12D69458500E42650 /* SugarWorldRecordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarWorldRecordsViewModel.swift; sourceTree = "<group>"; };
+		865B76212D5163D200921102 /* SugarSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarSettingsView.swift; sourceTree = "<group>"; };
+		865B76222D5163D200921102 /* SugarSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarSettingsModel.swift; sourceTree = "<group>"; };
+		865B76232D5163D200921102 /* SugarSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarSettingsViewModel.swift; sourceTree = "<group>"; };
+		865B76282D516FD000921102 /* SugarLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLevelsView.swift; sourceTree = "<group>"; };
+		865B76292D516FD000921102 /* SugarLevelsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLevelsModel.swift; sourceTree = "<group>"; };
+		865B762A2D516FD000921102 /* SugarLevelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLevelsViewModel.swift; sourceTree = "<group>"; };
+		865B762F2D51742100921102 /* SugarRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarRecordsView.swift; sourceTree = "<group>"; };
+		865B76302D51742100921102 /* SugarRecordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarRecordsModel.swift; sourceTree = "<group>"; };
+		865B76312D51742100921102 /* SugarRecordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarRecordsViewModel.swift; sourceTree = "<group>"; };
 		865E51342D50FA4A002C4434 /* SugarRush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarRush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865E51372D50FA4A002C4434 /* SugarRushApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarRushApp.swift; sourceTree = "<group>"; };
-		865E51392D50FA4A002C4434 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		865E513B2D50FA4B002C4434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		865E513E2D50FA4B002C4434 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		865E514C2D50FA9F002C4434 /* SugarImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarImageName.swift; sourceTree = "<group>"; };
+		865E514E2D50FAAA002C4434 /* SugarCustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarCustomButtons.swift; sourceTree = "<group>"; };
+		865E51502D50FAB2002C4434 /* SugarTextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarTextExtension.swift; sourceTree = "<group>"; };
+		865E51522D50FABF002C4434 /* SugarTextOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarTextOutline.swift; sourceTree = "<group>"; };
+		865E51552D50FAE9002C4434 /* SugarLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoadingView.swift; sourceTree = "<group>"; };
+		865E51562D50FAE9002C4434 /* SugarLoadingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoadingModel.swift; sourceTree = "<group>"; };
+		865E51572D50FAE9002C4434 /* SugarLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarLoadingViewModel.swift; sourceTree = "<group>"; };
+		865E515B2D50FC3E002C4434 /* BowlbyOneSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BowlbyOneSC-Regular.ttf"; sourceTree = "<group>"; };
+		865E515C2D50FC45002C4434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		865E515F2D51018E002C4434 /* SugarMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarMenuView.swift; sourceTree = "<group>"; };
+		865E51602D51018E002C4434 /* SugarMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarMenuModel.swift; sourceTree = "<group>"; };
+		865E51612D51018E002C4434 /* SugarMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarMenuViewModel.swift; sourceTree = "<group>"; };
+		866277B62D685F3E0002B314 /* SugarGameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarGameExtension.swift; sourceTree = "<group>"; };
+		866631AF2D6CA82100EA1989 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		866631B22D6CA86500EA1989 /* bg.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bg.wav; sourceTree = "<group>"; };
+		866631B32D6CA86600EA1989 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
+		866631B42D6CA86700EA1989 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		86E5BDCD2D5250C0004CD284 /* SugarShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarShopView.swift; sourceTree = "<group>"; };
+		86E5BDCE2D5250C0004CD284 /* SugarShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarShopModel.swift; sourceTree = "<group>"; };
+		86E5BDCF2D5250C0004CD284 /* SugarShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarShopViewModel.swift; sourceTree = "<group>"; };
+		86E5BDD42D525E67004CD284 /* SugarGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarGameView.swift; sourceTree = "<group>"; };
+		86E5BDD52D525E67004CD284 /* SugarGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarGameModel.swift; sourceTree = "<group>"; };
+		86E5BDD62D525E67004CD284 /* SugarGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarGameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +145,142 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8654A6A62D69269E00E42650 /* SugarWinModule */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6A72D6926AF00E42650 /* SugarWinView.swift */,
+				8654A6A82D6926AF00E42650 /* SugarWinModel.swift */,
+				8654A6A92D6926AF00E42650 /* SugarWinViewModel.swift */,
+			);
+			path = SugarWinModule;
+			sourceTree = "<group>";
+		};
+		8654A6AD2D692A6E00E42650 /* SugarLoseModule */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6AE2D692A7600E42650 /* SugarLoseView.swift */,
+				8654A6AF2D692A7600E42650 /* SugarLoseModel.swift */,
+				8654A6B02D692A7600E42650 /* SugarLoseViewModel.swift */,
+			);
+			path = SugarLoseModule;
+			sourceTree = "<group>";
+		};
+		8654A6B42D692AFC00E42650 /* SugarPauseModule */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6B52D692B0800E42650 /* SugarPauseView.swift */,
+				8654A6B62D692B0800E42650 /* SugarPauseModel.swift */,
+				8654A6B72D692B0800E42650 /* SugarPauseViewModel.swift */,
+			);
+			path = SugarPauseModule;
+			sourceTree = "<group>";
+		};
+		8654A6BB2D692B4B00E42650 /* SugarRulesModule */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6BC2D692B5500E42650 /* SugarRulesView.swift */,
+				8654A6BD2D692B5500E42650 /* SugarRulesModel.swift */,
+				8654A6BE2D692B5500E42650 /* SugarRulesViewModel.swift */,
+			);
+			path = SugarRulesModule;
+			sourceTree = "<group>";
+		};
+		8654A6C22D69310800E42650 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				866631AC2D6CA7EE00EA1989 /* AudioManager */,
+				8654A6D42D69445800E42650 /* API */,
+				8654A6C32D69311300E42650 /* UserDefaultsManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8654A6C32D69311300E42650 /* UserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6C42D69311B00E42650 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaultsManager;
+			sourceTree = "<group>";
+		};
+		8654A6C62D693ACE00E42650 /* SugarSignModule */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6C72D693B8100E42650 /* SugarSignView.swift */,
+				8654A6C82D693B8100E42650 /* SugarSignModel.swift */,
+				8654A6C92D693B8100E42650 /* SugarSignViewModel.swift */,
+			);
+			path = SugarSignModule;
+			sourceTree = "<group>";
+		};
+		8654A6CD2D69438E00E42650 /* SugarLoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6CE2D6943A300E42650 /* SugarLoginView.swift */,
+				8654A6CF2D6943A300E42650 /* SugarLoginModel.swift */,
+				8654A6D02D6943A300E42650 /* SugarLoginViewModel.swift */,
+			);
+			path = SugarLoginModule;
+			sourceTree = "<group>";
+		};
+		8654A6D42D69445800E42650 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6D52D69448200E42650 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8654A6D72D69452600E42650 /* SugarMyRecordsModule */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6D82D69453200E42650 /* SugarMyRecordsView.swift */,
+				8654A6D92D69453200E42650 /* SugarMyRecordsModel.swift */,
+				8654A6DA2D69453200E42650 /* SugarMyRecordsViewModel.swift */,
+			);
+			path = SugarMyRecordsModule;
+			sourceTree = "<group>";
+		};
+		8654A6DE2D69457100E42650 /* SugarWorldRecordsModule */ = {
+			isa = PBXGroup;
+			children = (
+				8654A6DF2D69458500E42650 /* SugarWorldRecordsView.swift */,
+				8654A6E02D69458500E42650 /* SugarWorldRecordsModel.swift */,
+				8654A6E12D69458500E42650 /* SugarWorldRecordsViewModel.swift */,
+			);
+			path = SugarWorldRecordsModule;
+			sourceTree = "<group>";
+		};
+		865B76202D5163C400921102 /* SugarSettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				865B76212D5163D200921102 /* SugarSettingsView.swift */,
+				865B76222D5163D200921102 /* SugarSettingsModel.swift */,
+				865B76232D5163D200921102 /* SugarSettingsViewModel.swift */,
+			);
+			path = SugarSettingsModule;
+			sourceTree = "<group>";
+		};
+		865B76272D516FC300921102 /* SugarLevelsModule */ = {
+			isa = PBXGroup;
+			children = (
+				865B76282D516FD000921102 /* SugarLevelsView.swift */,
+				865B76292D516FD000921102 /* SugarLevelsModel.swift */,
+				865B762A2D516FD000921102 /* SugarLevelsViewModel.swift */,
+			);
+			path = SugarLevelsModule;
+			sourceTree = "<group>";
+		};
+		865B762E2D51740900921102 /* SugarRecordsModule */ = {
+			isa = PBXGroup;
+			children = (
+				865B762F2D51742100921102 /* SugarRecordsView.swift */,
+				865B76302D51742100921102 /* SugarRecordsModel.swift */,
+				865B76312D51742100921102 /* SugarRecordsViewModel.swift */,
+			);
+			path = SugarRecordsModule;
+			sourceTree = "<group>";
+		};
 		865E512B2D50FA4A002C4434 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +300,26 @@
 		865E51362D50FA4A002C4434 /* SugarRush */ = {
 			isa = PBXGroup;
 			children = (
+				865E515C2D50FC45002C4434 /* Info.plist */,
 				865E51372D50FA4A002C4434 /* SugarRushApp.swift */,
-				865E51392D50FA4A002C4434 /* ContentView.swift */,
+				8654A6DE2D69457100E42650 /* SugarWorldRecordsModule */,
+				8654A6D72D69452600E42650 /* SugarMyRecordsModule */,
+				8654A6CD2D69438E00E42650 /* SugarLoginModule */,
+				8654A6C62D693ACE00E42650 /* SugarSignModule */,
+				8654A6BB2D692B4B00E42650 /* SugarRulesModule */,
+				8654A6B42D692AFC00E42650 /* SugarPauseModule */,
+				8654A6AD2D692A6E00E42650 /* SugarLoseModule */,
+				8654A6A62D69269E00E42650 /* SugarWinModule */,
+				86E5BDD32D525E5A004CD284 /* SugarGameModule */,
+				86E5BDCC2D5250A8004CD284 /* SugarShopModule */,
+				865B762E2D51740900921102 /* SugarRecordsModule */,
+				865B76272D516FC300921102 /* SugarLevelsModule */,
+				865B76202D5163C400921102 /* SugarSettingsModule */,
+				865E515E2D51017B002C4434 /* SugarMenuModule */,
+				865E51542D50FADA002C4434 /* SugarLoadingModule */,
+				865E51492D50FA79002C4434 /* SugarExtensions */,
+				865E51452D50FA5B002C4434 /* SugarHelpers */,
+				8654A6C22D69310800E42650 /* Managers */,
 				865E513B2D50FA4B002C4434 /* Assets.xcassets */,
 				865E513D2D50FA4B002C4434 /* Preview Content */,
 			);
@@ -65,6 +332,142 @@
 				865E513E2D50FA4B002C4434 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		865E51452D50FA5B002C4434 /* SugarHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				865E51482D50FA72002C4434 /* SugarFonts */,
+				865E51472D50FA6D002C4434 /* SugarImageName */,
+				865E51462D50FA5F002C4434 /* SugarCustomButtons */,
+			);
+			path = SugarHelpers;
+			sourceTree = "<group>";
+		};
+		865E51462D50FA5F002C4434 /* SugarCustomButtons */ = {
+			isa = PBXGroup;
+			children = (
+				865E514E2D50FAAA002C4434 /* SugarCustomButtons.swift */,
+			);
+			name = SugarCustomButtons;
+			path = "../New Group/SugarCustomButtons";
+			sourceTree = "<group>";
+		};
+		865E51472D50FA6D002C4434 /* SugarImageName */ = {
+			isa = PBXGroup;
+			children = (
+				865E514C2D50FA9F002C4434 /* SugarImageName.swift */,
+			);
+			path = SugarImageName;
+			sourceTree = "<group>";
+		};
+		865E51482D50FA72002C4434 /* SugarFonts */ = {
+			isa = PBXGroup;
+			children = (
+				865E515B2D50FC3E002C4434 /* BowlbyOneSC-Regular.ttf */,
+			);
+			path = SugarFonts;
+			sourceTree = "<group>";
+		};
+		865E51492D50FA79002C4434 /* SugarExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				865E514B2D50FA90002C4434 /* SugarTextOutlineExtension */,
+				865E514A2D50FA87002C4434 /* SugarTextExtension */,
+			);
+			path = SugarExtensions;
+			sourceTree = "<group>";
+		};
+		865E514A2D50FA87002C4434 /* SugarTextExtension */ = {
+			isa = PBXGroup;
+			children = (
+				865E51502D50FAB2002C4434 /* SugarTextExtension.swift */,
+			);
+			path = SugarTextExtension;
+			sourceTree = "<group>";
+		};
+		865E514B2D50FA90002C4434 /* SugarTextOutlineExtension */ = {
+			isa = PBXGroup;
+			children = (
+				865E51522D50FABF002C4434 /* SugarTextOutline.swift */,
+			);
+			path = SugarTextOutlineExtension;
+			sourceTree = "<group>";
+		};
+		865E51542D50FADA002C4434 /* SugarLoadingModule */ = {
+			isa = PBXGroup;
+			children = (
+				865E51552D50FAE9002C4434 /* SugarLoadingView.swift */,
+				865E51562D50FAE9002C4434 /* SugarLoadingModel.swift */,
+				865E51572D50FAE9002C4434 /* SugarLoadingViewModel.swift */,
+			);
+			path = SugarLoadingModule;
+			sourceTree = "<group>";
+		};
+		865E515E2D51017B002C4434 /* SugarMenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				865E515F2D51018E002C4434 /* SugarMenuView.swift */,
+				865E51602D51018E002C4434 /* SugarMenuModel.swift */,
+				865E51612D51018E002C4434 /* SugarMenuViewModel.swift */,
+			);
+			path = SugarMenuModule;
+			sourceTree = "<group>";
+		};
+		866277B52D685F300002B314 /* SugarGameExtension */ = {
+			isa = PBXGroup;
+			children = (
+				866277B62D685F3E0002B314 /* SugarGameExtension.swift */,
+			);
+			path = SugarGameExtension;
+			sourceTree = "<group>";
+		};
+		866631AC2D6CA7EE00EA1989 /* AudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				866631AE2D6CA81B00EA1989 /* Manager */,
+				866631AD2D6CA81300EA1989 /* Sounds */,
+			);
+			path = AudioManager;
+			sourceTree = "<group>";
+		};
+		866631AD2D6CA81300EA1989 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				866631B22D6CA86500EA1989 /* bg.wav */,
+				866631B32D6CA86600EA1989 /* lose.wav */,
+				866631B42D6CA86700EA1989 /* win.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		866631AE2D6CA81B00EA1989 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				866631AF2D6CA82100EA1989 /* AudioManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		86E5BDCC2D5250A8004CD284 /* SugarShopModule */ = {
+			isa = PBXGroup;
+			children = (
+				86E5BDCD2D5250C0004CD284 /* SugarShopView.swift */,
+				86E5BDCE2D5250C0004CD284 /* SugarShopModel.swift */,
+				86E5BDCF2D5250C0004CD284 /* SugarShopViewModel.swift */,
+			);
+			path = SugarShopModule;
+			sourceTree = "<group>";
+		};
+		86E5BDD32D525E5A004CD284 /* SugarGameModule */ = {
+			isa = PBXGroup;
+			children = (
+				86E5BDD42D525E67004CD284 /* SugarGameView.swift */,
+				86E5BDD52D525E67004CD284 /* SugarGameModel.swift */,
+				86E5BDD62D525E67004CD284 /* SugarGameViewModel.swift */,
+				866277B52D685F300002B314 /* SugarGameExtension */,
+			);
+			path = SugarGameModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +528,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866631B92D6CA86800EA1989 /* win.wav in Resources */,
+				866631B72D6CA86800EA1989 /* bg.wav in Resources */,
+				865E515D2D50FC65002C4434 /* BowlbyOneSC-Regular.ttf in Resources */,
 				865E513F2D50FA4B002C4434 /* Preview Assets.xcassets in Resources */,
+				866631B82D6CA86800EA1989 /* lose.wav in Resources */,
 				865E513C2D50FA4B002C4434 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +544,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865E513A2D50FA4A002C4434 /* ContentView.swift in Sources */,
+				865E51622D51018E002C4434 /* SugarMenuView.swift in Sources */,
+				865B76242D5163D200921102 /* SugarSettingsView.swift in Sources */,
+				865B76252D5163D200921102 /* SugarSettingsModel.swift in Sources */,
+				865B76262D5163D200921102 /* SugarSettingsViewModel.swift in Sources */,
+				86E5BDD72D525E67004CD284 /* SugarGameView.swift in Sources */,
+				86E5BDD82D525E67004CD284 /* SugarGameModel.swift in Sources */,
+				8654A6C52D69311B00E42650 /* UserDefaultsManager.swift in Sources */,
+				86E5BDD92D525E67004CD284 /* SugarGameViewModel.swift in Sources */,
+				865E51632D51018E002C4434 /* SugarMenuModel.swift in Sources */,
+				865E51642D51018E002C4434 /* SugarMenuViewModel.swift in Sources */,
+				8654A6AA2D6926AF00E42650 /* SugarWinView.swift in Sources */,
+				8654A6AB2D6926AF00E42650 /* SugarWinModel.swift in Sources */,
+				8654A6D12D6943A300E42650 /* SugarLoginView.swift in Sources */,
+				8654A6D22D6943A300E42650 /* SugarLoginModel.swift in Sources */,
+				8654A6D32D6943A300E42650 /* SugarLoginViewModel.swift in Sources */,
+				8654A6AC2D6926AF00E42650 /* SugarWinViewModel.swift in Sources */,
+				8654A6B12D692A7600E42650 /* SugarLoseView.swift in Sources */,
+				8654A6B82D692B0800E42650 /* SugarPauseView.swift in Sources */,
+				8654A6B92D692B0800E42650 /* SugarPauseModel.swift in Sources */,
+				8654A6BA2D692B0800E42650 /* SugarPauseViewModel.swift in Sources */,
+				8654A6B22D692A7600E42650 /* SugarLoseModel.swift in Sources */,
+				8654A6DB2D69453200E42650 /* SugarMyRecordsView.swift in Sources */,
+				8654A6DC2D69453200E42650 /* SugarMyRecordsModel.swift in Sources */,
+				8654A6DD2D69453200E42650 /* SugarMyRecordsViewModel.swift in Sources */,
+				866631B02D6CA82100EA1989 /* AudioManager.swift in Sources */,
+				8654A6B32D692A7600E42650 /* SugarLoseViewModel.swift in Sources */,
+				865B762B2D516FD000921102 /* SugarLevelsView.swift in Sources */,
+				865B762C2D516FD000921102 /* SugarLevelsModel.swift in Sources */,
+				865B762D2D516FD000921102 /* SugarLevelsViewModel.swift in Sources */,
+				865E51582D50FAE9002C4434 /* SugarLoadingView.swift in Sources */,
+				866277B72D685F3E0002B314 /* SugarGameExtension.swift in Sources */,
+				8654A6CA2D693B8100E42650 /* SugarSignView.swift in Sources */,
+				8654A6CB2D693B8100E42650 /* SugarSignModel.swift in Sources */,
+				8654A6CC2D693B8100E42650 /* SugarSignViewModel.swift in Sources */,
+				865E51592D50FAE9002C4434 /* SugarLoadingModel.swift in Sources */,
+				865E515A2D50FAE9002C4434 /* SugarLoadingViewModel.swift in Sources */,
+				865E51532D50FABF002C4434 /* SugarTextOutline.swift in Sources */,
+				865E514D2D50FA9F002C4434 /* SugarImageName.swift in Sources */,
+				8654A6E22D69458500E42650 /* SugarWorldRecordsView.swift in Sources */,
+				8654A6E32D69458500E42650 /* SugarWorldRecordsModel.swift in Sources */,
+				8654A6E42D69458500E42650 /* SugarWorldRecordsViewModel.swift in Sources */,
+				8654A6D62D69448200E42650 /* API.swift in Sources */,
+				8654A6BF2D692B5500E42650 /* SugarRulesView.swift in Sources */,
+				8654A6C02D692B5500E42650 /* SugarRulesModel.swift in Sources */,
+				8654A6C12D692B5500E42650 /* SugarRulesViewModel.swift in Sources */,
+				86E5BDD02D5250C0004CD284 /* SugarShopView.swift in Sources */,
+				86E5BDD12D5250C0004CD284 /* SugarShopModel.swift in Sources */,
+				86E5BDD22D5250C0004CD284 /* SugarShopViewModel.swift in Sources */,
+				865E51512D50FAB2002C4434 /* SugarTextExtension.swift in Sources */,
+				865B76322D51742100921102 /* SugarRecordsView.swift in Sources */,
+				865B76332D51742100921102 /* SugarRecordsModel.swift in Sources */,
+				865B76342D51742100921102 /* SugarRecordsViewModel.swift in Sources */,
 				865E51382D50FA4A002C4434 /* SugarRushApp.swift in Sources */,
+				865E514F2D50FAAA002C4434 /* SugarCustomButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +734,12 @@
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SugarRush/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +764,12 @@
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SugarRush/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
