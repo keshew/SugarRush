@@ -38,32 +38,45 @@ struct SugarWinView: View {
                                 }
                             }
                             
-                            Button(action: {
-                                let credentials = UserDefaultsManager().getUserCredentials()
-                                if let login = credentials.login, let password = credentials.password {
-                                    service.saveUserRecord(login: login, pass: password, record: "\(point)") { response in
-                                        if let response = response {
-                                            if response.status == "success" {
-                                                print("Record saved successfully!")
+                            if UserDefaultsManager().getLoginStatus() {
+                                Button(action: {
+                                    let credentials = UserDefaultsManager().getUserCredentials()
+                                    if let login = credentials.login, let password = credentials.password {
+                                        service.saveUserRecord(login: login, pass: password, record: "\(point)") { response in
+                                            if let response = response {
+                                                if response.status == "success" {
+                                                    print("Record saved successfully!")
+                                                } else {
+                                                    print("Failed to save record:", response.message)
+                                                }
                                             } else {
-                                                print("Failed to save record:", response.message)
+                                                print("Server is busy now.")
                                             }
-                                        } else {
-                                            print("Server is busy now.")
+                                        }
+                                    } else {
+                                        print("No user credentials found.")
+                                    }
+
+                                }) {
+                                        ZStack {
+                                            Image(.wideButtonBackground)
+                                                .resizable()
+                                                .frame(width: geometry.size.width * 0.329, height: geometry.size.height * 0.078)
+                                            
+                                            Text("SET RECORD!")
+                                                .Bowlby(size: 12)
                                         }
                                     }
-                                } else {
-                                    print("No user credentials found.")
-                                }
-
-                            }) {
-                                ZStack {
-                                    Image(.wideButtonBackground)
-                                        .resizable()
-                                        .frame(width: geometry.size.width * 0.329, height: geometry.size.height * 0.078)
-                                    
-                                    Text("SET RECORD!")
-                                        .Bowlby(size: 12)
+                            } else {
+                                NavigationLink(destination: SugarSignView()) {
+                                    ZStack {
+                                        Image(.wideButtonBackground)
+                                            .resizable()
+                                            .frame(width: geometry.size.width * 0.529, height: geometry.size.height * 0.078)
+                                        
+                                        Text("SIGN IN TO SET RECORD!")
+                                            .Bowlby(size: 12)
+                                    }
                                 }
                             }
                         }

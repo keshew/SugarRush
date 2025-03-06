@@ -7,6 +7,7 @@ struct SugarSignView: View {
     @State private var showAlert = false
     @State private var alertMessage = ""
     let service = APIManager()
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         GeometryReader { geometry in
@@ -20,13 +21,20 @@ struct SugarSignView: View {
                 RectangleCustom(geometry: geometry)
                     .position(x: geometry.size.width / 2, y: geometry.size.height / 1.7)
                 
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    BackButton(geometry: geometry)
+                }
+                .position(x: geometry.size.width / 2, y: geometry.size.height / 14.15)
+                
                 VStack {
                     Spacer()
                     
-                    VStack(spacing: geometry.size.height * 0.025) {
+                    VStack(spacing: geometry.size.height * 0.02) {
                         Spacer()
                         
-                        VStack(spacing: geometry.size.height * 0.005) {
+                        VStack(spacing: geometry.size.height * 0.015) {
                             Text("YOUR NICKNAME")
                                 .Bowlby(size: 20)
                             
@@ -62,7 +70,7 @@ struct SugarSignView: View {
                             .shadow(radius: 3, y: 4)
                         }
                         
-                        VStack(spacing: geometry.size.height * 0.005) {
+                        VStack(spacing: geometry.size.height * 0.015) {
                             Text("PASSWROD")
                                 .Bowlby(size: 20)
                             
@@ -98,7 +106,7 @@ struct SugarSignView: View {
                             .shadow(radius: 3, y: 4)
                         }
                         
-                        HStack(spacing: geometry.size.width * 0.061) {
+                        VStack(spacing: geometry.size.width * 0.081) {
                             Button(action: {
                                 guard !nickname.isEmpty, !password.isEmpty else {
                                     alertMessage = "Nickname and password cannot be empty."
@@ -136,7 +144,7 @@ struct SugarSignView: View {
                                 ZStack {
                                     Image(.wideButtonBackground)
                                         .resizable()
-                                        .frame(width: geometry.size.width * 0.397, height: geometry.size.height * 0.1)
+                                        .frame(width: geometry.size.width * 0.597, height: geometry.size.height * 0.1)
                                     
                                     Text("SIGN UP")
                                         .Bowlby(size: 20)
@@ -152,47 +160,14 @@ struct SugarSignView: View {
                                 ZStack {
                                     Image(.wideButtonBackground)
                                         .resizable()
-                                        .frame(width: geometry.size.width * 0.397, height: geometry.size.height * 0.1)
+                                        .frame(width: geometry.size.width * 0.597, height: geometry.size.height * 0.1)
                                     
                                     Text("HAVE ACCOUNT")
-                                        .Bowlby(size: 15)
+                                        .Bowlby(size: 20)
                                 }
                             }
                         }
-                        
-                        VStack {
-                            Text("OR")
-                                .Bowlby(size: 20)
-                            
-                            HStack(spacing: geometry.size.width * 0.063) {
-                                Button(action: {
-                                    
-                                }) {
-                                    Image(.facebook)
-                                        .resizable()
-                                        .frame(width: geometry.size.width * 0.157, height: geometry.size.width * 0.157)
-                                }
-                                .disabled(true)
-                                
-                                Button(action: {
-                                    
-                                }) {
-                                    Image(.twiter)
-                                        .resizable()
-                                        .frame(width: geometry.size.width * 0.157, height: geometry.size.width * 0.157)
-                                }
-                                .disabled(true)
-                                
-                                Button(action: {
-                                    
-                                }) {
-                                    Image(.apple)
-                                        .resizable()
-                                        .frame(width: geometry.size.width * 0.157, height: geometry.size.width * 0.157)
-                                }
-                                .disabled(true)
-                            }
-                        }
+                        .padding(.top, 10)
                     }
                 }
             }

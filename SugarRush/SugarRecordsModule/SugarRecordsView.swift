@@ -15,9 +15,7 @@ struct SugarRecordsView: View {
                 
                 VStack {
                     HStack {
-                        Button(action: {
-                            presentationMode.wrappedValue.dismiss()
-                        }) {
+                        NavigationLink(destination: SugarMenuView()) {
                             BackButton(geometry: geometry)
                         }
                         
@@ -34,7 +32,7 @@ struct SugarRecordsView: View {
                                     Image(.gearForeground)
                                         .resizable()
                                         .frame(width: geometry.size.width * 0.103,
-                                               height: geometry.size.width * 0.103)
+                                               height: geometry.size.height * 0.053)
                                 }
                                 Text("settings")
                                     .Bowlby(size: 15, outlineWidth: 0.5)
@@ -46,17 +44,32 @@ struct SugarRecordsView: View {
                     Spacer()
                     
                     VStack(spacing: 50) {
-                        NavigationLink(destination: SugarMyRecordsView()) {
-                            ZStack {
-                                Image(.wideButtonBackground)
-                                    .resizable()
-                                    .frame(width: 237, height: 96)
-                                
-                                Text("MY\nRECORDS")
-                                    .Bowlby(size: 20)
-                                    .multilineTextAlignment(.center)
+                        if UserDefaultsManager().getLoginStatus() {
+                            NavigationLink(destination: SugarMyRecordsView()) {
+                                ZStack {
+                                    Image(.wideButtonBackground)
+                                        .resizable()
+                                        .frame(width: 237, height: 96)
+                                    
+                                    Text("MY\nRECORDS")
+                                        .Bowlby(size: 20)
+                                        .multilineTextAlignment(.center)
+                                }
+                            }
+                        } else {
+                            NavigationLink(destination: SugarSignView()) {
+                                ZStack {
+                                    Image(.wideButtonBackground)
+                                        .resizable()
+                                        .frame(width: 237, height: 96)
+                                    
+                                    Text("MY\nRECORDS")
+                                        .Bowlby(size: 20)
+                                        .multilineTextAlignment(.center)
+                                }
                             }
                         }
+                       
                         
                         NavigationLink(destination: SugarWorldRecordsView()) {
                             ZStack {

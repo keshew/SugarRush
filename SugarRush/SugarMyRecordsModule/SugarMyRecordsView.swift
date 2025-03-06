@@ -15,9 +15,7 @@ struct SugarMyRecordsView: View {
                 RecordForegroundView(geometry: geometry, name: "MY")
                 
                 VStack {
-                    Button(action: {
-                        presentationMode.wrappedValue.dismiss()
-                    }) {
+                    NavigationLink(destination: SugarRecordsView()) {
                         BackButton(geometry: geometry)
                     }
                     

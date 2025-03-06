@@ -28,7 +28,7 @@ struct SugarLoginView: View {
                     VStack(spacing: geometry.size.height * 0.025) {
                         Spacer()
                         
-                        VStack(spacing: geometry.size.height * 0.005) {
+                        VStack(spacing: geometry.size.height * 0.015) {
                             Text("YOUR NICKNAME")
                                 .Bowlby(size: 20)
                             
@@ -64,7 +64,7 @@ struct SugarLoginView: View {
                             .shadow(radius: 3, y: 4)
                         }
                         
-                        VStack(spacing: geometry.size.height * 0.005) {
+                        VStack(spacing: geometry.size.height * 0.015) {
                             Text("PASSWROD")
                                 .Bowlby(size: 20)
                             
@@ -100,7 +100,7 @@ struct SugarLoginView: View {
                             .shadow(radius: 3, y: 4)
                         }
                         
-                        HStack(spacing: geometry.size.width * 0.061) {
+                        VStack(spacing: geometry.size.width * 0.081) {
                             Button(action: {
                                 guard !nickname.isEmpty, !password.isEmpty else {
                                     alertMessage = "Nickname and password cannot be empty."
@@ -139,7 +139,7 @@ struct SugarLoginView: View {
                                 ZStack {
                                     Image(.wideButtonBackground)
                                         .resizable()
-                                        .frame(width: geometry.size.width * 0.397, height: geometry.size.height * 0.1)
+                                        .frame(width: geometry.size.width * 0.597, height: geometry.size.height * 0.1)
                                     
                                     Text("LOG IN")
                                         .Bowlby(size: 20)
@@ -157,51 +157,18 @@ struct SugarLoginView: View {
                                 ZStack {
                                     Image(.wideButtonBackground)
                                         .resizable()
-                                        .frame(width: geometry.size.width * 0.397, height: geometry.size.height * 0.1)
+                                        .frame(width: geometry.size.width * 0.597, height: geometry.size.height * 0.1)
                                     
                                     Text("GO BACK")
                                         .Bowlby(size: 20)
                                 }
                             }
                         }
-                        
-                        VStack {
-                            Text("OR")
-                                .Bowlby(size: 20)
-                            
-                            HStack(spacing: geometry.size.width * 0.063) {
-                                Button(action: {
-                                    
-                                }) {
-                                    Image(.facebook)
-                                        .resizable()
-                                        .frame(width: geometry.size.width * 0.157, height: geometry.size.width * 0.157)
-                                }
-                                .disabled(true)
-                                
-                                Button(action: {
-                                    
-                                }) {
-                                    Image(.twiter)
-                                        .resizable()
-                                        .frame(width: geometry.size.width * 0.157, height: geometry.size.width * 0.157)
-                                }
-                                .disabled(true)
-                                
-                                Button(action: {
-                                    
-                                }) {
-                                    Image(.apple)
-                                        .resizable()
-                                        .frame(width: geometry.size.width * 0.157, height: geometry.size.width * 0.157)
-                                }
-                                .disabled(true)
-                            }
-                        }
+                        .padding(.top, 10)
                     }
                 }
             }
-            NavigationLink(destination: SugarMenuView(),
+            NavigationLink(destination: SugarMyRecordsView(),
                            isActive: $sugarLoginModel.isMenu) {}
                 .hidden()
         }

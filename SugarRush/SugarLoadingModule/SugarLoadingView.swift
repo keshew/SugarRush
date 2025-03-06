@@ -50,11 +50,12 @@ struct SugarLoadingView: View {
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
                         audioManager.playBackgroundMusic()
-                        if UserDefaultsManager().getLoginStatus() {
-                            sugarLoadingModel.isMenu = true
-                        } else {
-                            sugarLoadingModel.isSign = true
-                        }
+//                        if UserDefaultsManager().getLoginStatus() {
+//                            sugarLoadingModel.isMenu = true
+//                        } else {
+//                            sugarLoadingModel.isSign = true
+//                        }
+                        sugarLoadingModel.isMenu = true
                     }
                 }
                 

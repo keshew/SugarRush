@@ -25,7 +25,7 @@ struct SugarMenuView: View {
                                     Image(.gearForeground)
                                         .resizable()
                                         .frame(width: geometry.size.width * 0.103,
-                                               height: geometry.size.width * 0.103)
+                                               height: geometry.size.height * 0.053)
                                 }
                                 Text("settings")
                                     .Bowlby(size: 15, outlineWidth: 0.5)
