@@ -157,7 +157,7 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
     }
     
     func createVerticalBlock(with: String, positionX: CGFloat) {
-        if size.width > 400 {
+        if size.width > 450 {
             for row in 0..<8 {
                 for column in 0..<3 {
                     let sprite = SKSpriteNode(imageNamed: with)
@@ -185,7 +185,7 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
     }
     
     func createHorizontalBlock(with: String, positionY: CGFloat) {
-        if size.width > 400 {
+        if size.width > 450 {
             for row in 0..<3 {
                 for column in 0..<8 {
                     let sprite = SKSpriteNode(imageNamed: with)
@@ -228,7 +228,7 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
         createMainView()
         createTappedView()
         createMutatingView()
-        if size.width > 400 {
+        if size.width > 450 {
             createVerticalBlock(with: SugarImageName.blockToRight.rawValue, positionX: 13)
             createVerticalBlock(with: SugarImageName.blockToLeft.rawValue, positionX: 1.25)
             createHorizontalBlock(with: SugarImageName.blockToTop.rawValue, positionY: 3.3)
@@ -239,7 +239,7 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
             createHorizontalBlock(with: SugarImageName.blockToTop.rawValue, positionY: 3.3)
             createHorizontalBlock(with: SugarImageName.blockToBottom.rawValue, positionY: 1.62)
         }
-        if size.width > 400 {
+        if size.width > 450 {
             createRandomBlockWidth()
         } else {
             createRandomBlock()
@@ -284,7 +284,6 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    //MARK: - create level 400 width
     func createRandomBlock() {
         switch level {
         case 1:
