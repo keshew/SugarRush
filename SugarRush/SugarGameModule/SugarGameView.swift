@@ -157,14 +157,26 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
     }
     
     func createVerticalBlock(with: String, positionX: CGFloat) {
-        if size.width > 450 {
+        if size.width > 1000 {
             for row in 0..<8 {
                 for column in 0..<3 {
                     let sprite = SKSpriteNode(imageNamed: with)
-                    sprite.size = CGSize(width: 65, height: 38)
+                    sprite.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
                     sprite.name = with
-                    sprite.position = CGPoint(x: size.width / positionX + CGFloat(column) * 65,
-                                              y: size.height / 2.565 + CGFloat(row) * 38)
+                    sprite.position = CGPoint(x: size.width / positionX + CGFloat(column) * size.width * 0.06,
+                                              y: size.height / 2.565 + CGFloat(row) * size.width * 0.037)
+                    addChild(sprite)
+                    blocksOutsideGrid.append(sprite)
+                }
+            }
+        } else if size.width > 450 {
+            for row in 0..<8 {
+                for column in 0..<3 {
+                    let sprite = SKSpriteNode(imageNamed: with)
+                    sprite.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                    sprite.name = with
+                    sprite.position = CGPoint(x: size.width / positionX + CGFloat(column) * size.width * 0.06,
+                                              y: size.height / 2.565 + CGFloat(row) * size.width * 0.04)
                     addChild(sprite)
                     blocksOutsideGrid.append(sprite)
                 }
@@ -189,10 +201,10 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
             for row in 0..<3 {
                 for column in 0..<8 {
                     let sprite = SKSpriteNode(imageNamed: with)
-                    sprite.size = CGSize(width: 65, height: 38)
+                    sprite.size = CGSize(width: size.width * 0.061, height: size.width * 0.037)
                     sprite.name = with
-                    sprite.position = CGPoint(x: size.width / 3.65 + CGFloat(column) * 67,
-                                              y: size.height / positionY + CGFloat(row) * 38)
+                    sprite.position = CGPoint(x: size.width / 3.65 + CGFloat(column) * size.width * 0.0643,
+                                              y: size.height / positionY + CGFloat(row) * size.width * 0.037)
                     addChild(sprite)
                     blocksOutsideGrid.append(sprite)
                 }
@@ -565,8 +577,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 2.92 + CGFloat(i) * 65, y: size.height / 2.115)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 2.92 + CGFloat(i) * size.width * 0.063, y: size.height / 2.115)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -575,15 +587,15 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 2.92 + CGFloat(i) * 65, y: size.height / 2.115)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 2.92 + CGFloat(i) * size.width * 0.063, y: size.height / 2.115)
                 addChild(block)
                 blockInsideGrid.append(block)
                 
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
-                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.113 + CGFloat(i) * 38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.113 + CGFloat(i) * size.width * 0.037)
                 addChild(block2)
                 blockInsideGrid.append(block2)
             }
@@ -592,15 +604,15 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * 65, y: size.height / 2.115)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * size.width * 0.063, y: size.height / 2.115)
                 addChild(block)
                 blockInsideGrid.append(block)
                 
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
-                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.38 + CGFloat(i) * 38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.38 + CGFloat(i) * size.width * 0.037)
                 addChild(block2)
                 blockInsideGrid.append(block2)
             }
@@ -610,8 +622,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
-                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * 38)
+                block2.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * size.width * 0.037)
                 addChild(block2)
                 blockInsideGrid.append(block2)
             }
@@ -621,8 +633,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
-                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * 38)
+                block2.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * size.width * 0.037)
                 addChild(block2)
                 blockInsideGrid.append(block2)
             }
@@ -632,8 +644,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * 65, y: size.height / 2.235)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * size.width * 0.063, y: size.height / 2.235)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -641,8 +653,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
-                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * 38)
+                block2.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * size.width * 0.037)
                 addChild(block2)
                 blockInsideGrid.append(block2)
             }
@@ -652,8 +664,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * 65, y: size.height / 2.235)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * size.width * 0.063, y: size.height / 2.235)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -661,7 +673,7 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
+                block2.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
                 block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * 38)
                 addChild(block2)
                 blockInsideGrid.append(block2)
@@ -671,8 +683,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
-                block2.position = CGPoint(x: size.width / 2.45, y: size.height / 2.115 + CGFloat(i) * 38)
+                block2.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block2.position = CGPoint(x: size.width / 2.45, y: size.height / 2.115 + CGFloat(i) * size.width * 0.037)
                 addChild(block2)
                 blockInsideGrid.append(block2)
             }
@@ -682,8 +694,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * 65, y: size.height / 2.235)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * size.width * 0.063, y: size.height / 2.235)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -691,8 +703,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
-                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * 38)
+                block2.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block2.position = CGPoint(x: size.width / 2.92, y: size.height / 2.115 + CGFloat(i) * size.width * 0.037)
                 addChild(block2)
                 blockInsideGrid.append(block2)
             }
@@ -701,8 +713,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 2.14, y: size.height / 2.235 + CGFloat(i) * 38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 2.14, y: size.height / 2.235 + CGFloat(i) * size.width * 0.037)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -712,8 +724,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.88 + CGFloat(i) * 67, y: size.height / 2.38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.88 + CGFloat(i) * size.width * 0.063, y: size.height / 2.38)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -721,8 +733,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block2 = SKSpriteNode(imageNamed: item)
                 block2.name = item
-                block2.size = CGSize(width: 65, height: 38)
-                block2.position = CGPoint(x: size.width / 2.13, y: size.height / 1.89 + CGFloat(i) * 38)
+                block2.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block2.position = CGPoint(x: size.width / 2.13, y: size.height / 1.89 + CGFloat(i) * size.width * 0.037)
                 addChild(block2)
                 blockInsideGrid.append(block2)
             }
@@ -732,8 +744,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.88 + CGFloat(i) * 67, y: size.height / 2.38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.88 + CGFloat(i) * size.width * 0.063, y: size.height / 2.38)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -742,8 +754,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.875 + CGFloat(i) * 67, y: size.height / 1.802)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.875 + CGFloat(i) * size.width * 0.063, y: size.height / 1.802)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -752,8 +764,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 2.93 + CGFloat(i) * 67, y: size.height / 2.38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 2.93 + CGFloat(i) * size.width * 0.063, y: size.height / 2.38)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -763,8 +775,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.88 + CGFloat(i) * 67, y: size.height / 2.38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.88 + CGFloat(i) * size.width * 0.063, y: size.height / 2.38)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -773,8 +785,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.88, y: size.height / 1.89 + CGFloat(i) * 38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.88, y: size.height / 1.89 + CGFloat(i) * size.width * 0.037)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -783,7 +795,7 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
                 block.position = CGPoint(x: size.width / 2.93 + CGFloat(i) * 65, y: size.height / 2.38)
                 addChild(block)
                 blockInsideGrid.append(block)
@@ -794,8 +806,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.88, y: size.height / 2.38 + CGFloat(i) * 38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.88, y: size.height / 2.38 + CGFloat(i) * size.width * 0.037)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -804,8 +816,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * 65, y: size.height / 1.895)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 1.87 + CGFloat(i) * size.width * 0.063, y: size.height / 1.895)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -814,8 +826,8 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
                 let item = getRandomBlock()
                 let block = SKSpriteNode(imageNamed: item)
                 block.name = item
-                block.size = CGSize(width: 65, height: 38)
-                block.position = CGPoint(x: size.width / 2.93 + CGFloat(i) * 65, y: size.height / 2.38)
+                block.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
+                block.position = CGPoint(x: size.width / 2.93 + CGFloat(i) * size.width * 0.063, y: size.height / 2.38)
                 addChild(block)
                 blockInsideGrid.append(block)
             }
@@ -852,16 +864,33 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
             switch blockOutside.name {
             case "blockToRight":
                 direction = CGPoint(x: -1, y: 0)
-                targetPosition.x -= (blockOutside.size.width / 2 + targetNode.size.width / 2)
+                targetPosition.x -= (blockOutside.size.width / 2 + targetNode.size.width / 1.9)
             case "blockToLeft":
                 direction = CGPoint(x: 1, y: 0)
                 targetPosition.x += (blockOutside.size.width / 2 + targetNode.size.width / 1.9)
             case "blockToBottom":
                 direction = CGPoint(x: 0, y: 1)
-                targetPosition.y += (blockOutside.size.height / 2 + targetNode.size.height / 1.9)
+                targetPosition.y += (blockOutside.size.height / 2 + targetNode.size.height / 1.8)
             case "blockToTop":
                 direction = CGPoint(x: 0, y: -1)
                 targetPosition.y -= (blockOutside.size.height / 2 + targetNode.size.width / 3.5)
+            default:
+                return
+            }
+        } else if size.width > 1000 {
+            switch blockOutside.name {
+            case "blockToRight":
+                direction = CGPoint(x: -1, y: 0)
+                targetPosition.x -= (blockOutside.size.width / 2 + targetNode.size.width / 1.5)
+            case "blockToLeft":
+                direction = CGPoint(x: 1, y: 0)
+                targetPosition.x += (blockOutside.size.width / 2 + targetNode.size.width / 1.6)
+            case "blockToBottom":
+                direction = CGPoint(x: 0, y: 1)
+                targetPosition.y += (blockOutside.size.height / 2 + targetNode.size.height / 1.6)
+            case "blockToTop":
+                direction = CGPoint(x: 0, y: -1)
+                targetPosition.y -= (blockOutside.size.height / 2 + targetNode.size.width / 1.85)
             default:
                 return
             }
@@ -920,9 +949,10 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
             var newBlockPosition = initialPosition
             if size.width > 400 {
                 if direction.x != 0 {
-                    newBlockPosition.x += 1 * direction.x * (blockOutside.size.width + 64)
+                   
+                    newBlockPosition.x += 1 * direction.x * (blockOutside.size.width + size.width * 0.063)
                 } else if direction.y != 0 {
-                    newBlockPosition.y += 1 * direction.y * (blockOutside.size.height + 38)
+                    newBlockPosition.y += 1 * direction.y * (blockOutside.size.height + size.width * 0.037)
                 }
             } else {
                 if direction.x != 0 {
@@ -988,7 +1018,7 @@ class SugarGameSpriteKit: SKScene, SKPhysicsContactDelegate {
         if size.width > 400 {
             let randomBlock = getRandomBlock()
             let newBlock = SKSpriteNode(imageNamed: randomBlock)
-            newBlock.size = CGSize(width: 65, height: 38)
+            newBlock.size = CGSize(width: size.width * 0.063, height: size.width * 0.037)
             newBlock.position = position
             addChild(newBlock)
             blocksOutsideGrid.append(newBlock)

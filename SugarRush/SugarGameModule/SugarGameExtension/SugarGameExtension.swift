@@ -231,7 +231,7 @@ extension SugarGameSpriteKit {
 
     func createMutatingView() {
         let levelLabel = SKLabelNode(fontNamed: "BowlbyOneSC-Regular")
-        levelLabel.attributedText = NSAttributedString(string: "LEVEL \(level)", attributes: [
+        levelLabel.attributedText = NSAttributedString(string: "LEVEL \(UIScreen.main.bounds.width)", attributes: [
             NSAttributedString.Key.font: UIFont(name: "BowlbyOneSC-Regular", size: size.width * 0.07634)!,
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.strokeColor: UIColor(red: 145/255, green: 17/255, blue: 38/255, alpha: 1),
